@@ -1,0 +1,203 @@
+#nombre-jugador{
+    color: var(--Color-fondo-secundario);
+}
+#btn-pista{
+    background-color: var(--Color-gris);
+    margin-top: 1%;
+    border-radius: 100%;
+    border: 0;
+    width: 2.3rem;
+    height: 2.3rem;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+#btn-pista:hover{
+    background-color: rgb(71, 71, 71);
+    color: var(--Color-fuente-secundario);
+    transition: 0.3s;
+    border: 1px solid var(--Color-gris);
+}
+.container-cabecera{
+    background-color: var(--Color-fondo-secundario);
+    color: var(--Color-fuente-principal);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem 0;
+}
+.container-cabecera div:nth-child(2) h2, .container-cabecera div:nth-child(2) p{
+    margin: 0;
+}
+.container-cabecera div:nth-child(2){
+    text-align: center;
+}
+.container-cabecera div:nth-child(2) p{
+    font-size: 1.3rem;
+    margin-top: 0.5rem;
+}
+.muñeco-ahorcado{
+    text-align: center;
+}
+.ahorcado{
+    width: 20rem;
+    height: 15rem;
+    margin: 0 auto;
+    margin-top: 3%;
+    border: 2px solid var(--Color-fuente-principal);
+    background-color: rgba(255, 255, 255, 0.4);
+}
+.ahorcado .parte-cuerpo{
+    position: relative;
+    border: 1px solid #000;
+    background-color: #000;
+}
+.ahorcado .cabeza{
+    top: 0.5rem;
+    left: 45%;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 100%;
+}
+.ahorcado .torso{
+    top: 0.5rem;
+    left: 45%;
+    width: 3rem;
+    height: 5rem;
+}
+.brazo-izquierdo{
+    top: -30.5%;
+    left: 8.15rem;
+    width: 0.8rem;
+    height: 3rem;
+    z-index: 100;
+    transform: rotate(30deg);
+}
+.brazo-derecho{
+    top: -51.5%;
+    right: -12.1rem;
+    width: 0.8rem;
+    height: 3rem;
+    z-index: 100;
+    transform: rotate(-30deg);
+}
+.pierna-izquierda{
+    width: 1rem;
+    height: 5rem;
+    top: -39%;
+    left: 9rem;
+}
+.pierna-derecha{
+    width: 1rem;
+    height: 5rem;
+    top: -73.5%;
+    right: -11rem;
+}
+
+/*Palabras*/
+#txt-palabra-sistema{
+    text-align: center;
+    width: 25%;
+    margin:  0 auto;
+    padding: 0.7% 3%;
+    border: 1px dashed;
+    box-sizing: border-box;
+    font-size: 1.2rem;
+    color: var(--Color-fuente-principal);
+}
+#txt-numero-letras{
+    text-align: center;
+    color: var(--Color-fuente-principal);
+}
+.container-campos-texto{
+    margin-top: 2%;
+}
+.campo-texto-usuario{
+    width: 25%;
+    max-width: 1;
+    margin: 0 auto;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+}
+input#txt-respuesta-usuario{
+    padding: 3%;
+    width: 83%;
+    background-color: var(--Color-gris);
+    border: 0;
+    outline: none;
+    border-radius: 3px;
+}
+input#txt-respuesta-usuario:focus{
+    box-shadow: 0px 0px 5px rgb(187, 187, 187);
+    outline: none !important;
+}
+button#btn-respuesta-usuario{
+    height: 2.5rem;
+    border: 0;
+    width: 2.5rem;
+    border-radius: 100%;
+    margin-left: 2%;
+    background-color: var(--Color-fuente-secundario);
+    cursor: pointer;
+    transition: 0.3s;
+}
+button#btn-respuesta-usuario:hover{
+    background-color: rgb(71, 71, 71);
+    color: var(--Color-fuente-secundario);
+    transition: 0.3s;
+    border: 1px solid var(--Color-gris);
+}
+
+/*Footer*/
+#footer{
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+    font-size: 1.1rem;
+    color: var(--Color-fuente-principal);
+    background-color: var(--Color-fondo-secundario);
+}
+#footer span{
+    color: var(--Color-fuente-secundario);
+    margin-right: 0.5%;
+}
+
+/*Pistas*/
+#btn-cerrar{
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.container-info-pista{
+    background-color: var(--Color-fondo-secundario);
+    color: var(--Color-fuente-principal);
+    position: absolute;
+    width: 23%;
+    max-width: 350px;
+    top: 10.5rem;
+    right: 5rem;
+    z-index: 3000;
+    padding: 1%;
+}
+.container-info-pista h2{
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.6rem;
+}
+.container-info-pista h2::after{
+    content: "";
+    display: block;
+    width: 50%;
+    border-radius: 20px;
+    height: 0.2rem;
+    margin: 0 auto;
+    margin-top: 0.5rem;
+    border: 0px solid;
+    background-color: var(--Color-fuente-secundario);
+}
+.controlador-pistas{
+    text-align: center;
+    border-top: 1px solid;
+    padding-top: 5%;
+}

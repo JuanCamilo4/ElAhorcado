@@ -1,0 +1,41 @@
+@media screen and (max-width: 812px) {
+    #container-pantalla-inicial{
+        width: 90%;
+    }
+    .container-datos-jugador{
+        display: block;
+    }
+    .datos-jugador{
+        width: auto;
+        box-shadow: 0px 0px 4px var(--Color-gris);
+        margin-bottom: 5%;
+    }
+    #txt-palabra-sistema {
+        width: 80%;
+        padding: 3%;
+    }
+    .campo-texto-usuario {
+        text-align: center;
+        width: 100%;
+        display: block;
+    }
+    button#btn-respuesta-usuario {
+        width: 3rem;
+        height: 3rem;
+        margin-top: 3%;
+    }
+    #btn-pista{
+        margin: 5%;
+    }
+    #footer{
+        flex-wrap: wrap;
+        padding: 5%;
+    }
+    .container-info-pista {
+        width: 70%;
+        padding: 5%;
+        right: 0;
+        left: 0;
+        margin: auto;
+    }
+}

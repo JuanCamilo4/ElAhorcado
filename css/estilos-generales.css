@@ -1,0 +1,41 @@
+@font-face{
+    font-family: 'Brutal-Light';
+    src: url("../public/brutal/BrutalType.ttf");
+    src: local(),
+        url("../public/brutal/BrutalType.woff") format("woff"),
+        url("../public/brutal/BrutalType.eot") format("eot"),
+        url("../public/brutal/BrutalType.woff2") format("woff2");
+}
+@font-face{
+    font-family: 'Brutal-Bold';
+    src: url("../public/brutal/BrutalType-Bold.ttf");
+    src: local(),
+        url("../public/brutal/BrutalType-Bold.woff") format("woff"),
+        url("../public/brutal/BrutalType-Bold.eot") format("eot"),
+        url("../public/brutal/BrutalType-Bold.woff2") format("woff2");
+}
+:root{
+    --Color-gris: rgb(239, 239, 239);
+    --Color-fuente-principal: #EEEEEE;
+    --Color-fuente-secundario: #FFD369;
+    --Color-fondo-secundario: #3f464e;
+}
+body{
+    font-family: 'Brutal-Light';
+    background-color: #222831;
+}
+.btn{
+    background-color: var(--Color-gris);
+    padding: 3%;
+    border: 0;
+    transition: 0.3s;
+    border: 1px solid transparent;
+    cursor: pointer;
+    border-radius: 3px;
+}
+.btn:hover{
+    background-color: rgb(71, 71, 71);
+    color: var(--Color-fuente-secundario);
+    transition: 0.3s;
+    border: 1px solid var(--Color-gris);
+}
