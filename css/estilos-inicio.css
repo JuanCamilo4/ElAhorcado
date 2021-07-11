@@ -60,6 +60,10 @@
     padding: 2.5%;
     margin-top: 3%;
 }
+#historial-juegos tr:nth-child(1) th{
+    color: #FFD369;
+    border-bottom: 1px solid var(--Color-fuente-principal);
+}
 .historial{
     width: 55%;
     text-align: center;

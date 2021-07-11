@@ -1,5 +1,5 @@
 @font-face{
-    font-family: 'Brutal-Light';
+    font-family: 'BrutalType';
     src: url("../public/brutal/BrutalType.ttf");
     src: local(),
         url("../public/brutal/BrutalType.woff") format("woff"),
@@ -20,8 +20,11 @@
     --Color-fuente-secundario: #FFD369;
     --Color-fondo-secundario: #3f464e;
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
-    font-family: 'Brutal-Light';
+    font-family: 'BrutalType';
     background-color: #222831;
 }
 .btn{
